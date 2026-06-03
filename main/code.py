@@ -7,8 +7,10 @@ dAta = {
     "age":[22, 24, 23]
 }
 
+
 df = pd.DataFrame(dAta)
+df.loc[len(df)]=["satyarth", 21]
 
 path = "data/some.csv"
 df.to_csv(path, index=False)
-print("data saved to csv file")
+print("data changed at csv file")
